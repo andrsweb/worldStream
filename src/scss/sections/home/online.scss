@@ -1,0 +1,37 @@
+.online {
+
+	.container {
+		max-width: 1200px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-extra;
+		font-size: 41px;
+		line-height: 64px;
+		color: $white;
+		max-width: 736px;
+		margin-bottom: 200px;
+
+		strong {
+			background-color: $accent;
+		}
+	}
+
+	&__text {
+		font-family: $ff-mon;
+		font-weight: $fw-medium;
+		font-size: 22px;
+		line-height: 27px;
+		color: $white;
+		max-width: 453px;
+	}
+
+	&__wrapper {
+		display: flex;
+
+		&_left {
+			padding-top: 12.5%;
+		}
+	}
+}
