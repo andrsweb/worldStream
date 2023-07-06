@@ -1,10 +1,7 @@
 h1, .h1,
 h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-	font-family: $ff-title;
+h3, .h3 {
+	font-family: $ff;
 	font-weight: $fw-bold;
 	line-height: $lh-title;
 	margin: 0 0 1rem
@@ -26,33 +23,13 @@ h2, .h2 {
 	}
 }
 
-h3, .h3 {
-	font-size: 30px
-}
-
-h4, .h4 {
-	font-size: $fs-xl;
-
-	@media all and (min-width: $lg) {
-		font-size: 24px
-	}
-}
-
-h5, .h5 {
-	font-size: $fs-xl
-}
-
-h6, .h6 {
-	font-size: $fs-lg
-}
-
 a {
 	display: inline-block;
-	text-decoration: underline;
-	transition: color ease-out $tr;
+	text-decoration: none;
+	transition: opacity ease-out $tr;
 
 	&:hover {
-		text-decoration: none
+		opacity: $op;
 	}
 }
 
