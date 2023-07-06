@@ -1,0 +1,86 @@
+.income {
+	padding: 50px 0;
+
+	.container {
+		max-width: 1040px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 36px;
+		color: $white;
+		padding-right: 20%;
+		line-height: 1.6;
+		margin-bottom: 32px;
+
+		span {
+			color: $accent;
+		}
+	}
+
+	&__title_desc {
+		font-family: $ff-mon;
+		font-weight: $fw-bold;
+		color: $white;
+		font-size: 13px;
+		position: relative;
+		padding-left: 12px;
+		line-height: 1;
+		margin-bottom: 80px;
+
+		&::before {
+			content: "*";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: -34px;
+			display: block;
+			font-size: 36px;
+			color: $accent;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+
+		&_left {
+			width: 50%;
+		}
+
+		&_right {
+			width: 50%;
+			padding-left: 50px;
+		}
+	}
+
+	&__table {
+		display: flex;
+		background-color: $accent;
+		padding: 32px 16px;
+		border-radius: 50px;
+		font-family: $ff;
+		font-weight: $fw-bold;
+		color: $white;
+		font-size: 13px;
+		text-align: center;
+
+		&_left {
+			width: 65%;
+			border-right: 1px solid $white;
+		}
+
+		&_right {
+			width: 35%;
+		}
+	}
+
+	&__left_item, &__right_item {
+		margin-bottom: 32px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
