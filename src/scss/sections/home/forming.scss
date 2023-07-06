@@ -1,0 +1,142 @@
+.forming {
+	padding: 50px 0 250px;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -70px;
+		left: 0;
+		background-image: url( '../img/clouds/clouds.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 361px;
+	}
+	
+
+	.container {
+		max-width: 1030px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-extra;
+		font-size: 45px;
+		line-height: 67px;
+		color: $white;
+		text-align: center;
+		margin-bottom: 34px;
+	}
+
+	&__items {
+		display: flex;
+		margin: 0 -12px;
+	}
+
+	&__item {
+		width: calc( 100% / 4 );
+		padding: 0 12px;
+		min-height: 352px;
+
+		&:nth-child(2) {
+			.forming__title {
+				display: flex;
+				align-items: center;
+
+				span {
+					padding-top: 10px;
+					font-size: 69px;
+				}
+			}
+		}
+
+		&:nth-child(3) {
+			.forming__title {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					font-size: 69px;
+					margin-top: 20px;
+				}
+			}
+		}
+
+		&:last-child {
+			.forming__title {
+				display: flex;
+				flex-direction: column;
+				position: relative;
+			}
+			.forming__title_top {
+				padding-top: 30px;
+				display: flex;
+				flex-direction: column;
+
+				.forming__number {
+					font-weight: $fw-bold;
+					font-size: 89px;
+					margin-bottom: 5px;
+				}
+	
+				.reverse__text {
+					font-size: 22px;
+					position: absolute;
+					left: 20px;
+					top: 60px;
+					transform: rotate(-90deg);
+				}
+			}
+		}
+	}
+
+	&__inner {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		background-color: $white;
+		position: relative;
+		border-radius: 17px;
+	}
+
+	&__title {
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 31px;
+		line-height: 31px;
+		color: $white;
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 176px;
+		padding: 13px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 176px;
+			background-color: $accent;
+			border-radius: 17px;
+			z-index: -1;
+		}
+	}
+
+	&__text {
+		font-family: $ff-mon;
+		font-weight: $fw-regular;
+		font-size: 20px;
+		line-height: 24px;
+		color: $black;
+		text-align: center;
+		margin-top: 39px;
+		padding: 0 20px;
+	}
+}
