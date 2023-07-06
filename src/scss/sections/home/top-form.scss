@@ -25,18 +25,21 @@
 
 	.top__send {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		width: 40%;
 
 		fieldset {
 			display: flex;
 			flex-direction: column;
+			margin-bottom: 20px;
 		}
 
 		input {
 			padding: 18px 28px;
 			border-radius: 50px;
 			margin-bottom: 11px;
+			width: 100%;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -49,6 +52,11 @@
 			font-size: 19px;
 			color: $input;
 			opacity: 1;
+		}
+
+		.button {
+			width: 100%;
+			// max-width: ;
 		}
 	}
 
