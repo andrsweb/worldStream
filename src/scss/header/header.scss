@@ -1,0 +1,16 @@
+.header {
+	padding: 43px 0 40px;
+
+	&__logo {
+		margin-bottom: 5px;
+	}
+
+	&__subtitle {
+		font-family: $ff;
+		font-weight: $fw-semibold;
+		color: $white;
+		font-size: 23px;
+		text-transform: uppercase;
+		padding-left: 5px;
+	}
+}
