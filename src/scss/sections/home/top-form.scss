@@ -1,12 +1,17 @@
 .top__form {
-	padding: 50px 0;
+	padding: 245px 0 50px;
 
 	&_wrapper {
 		display: flex;
 		background-color: $black;
+		padding: 40px;
+		border-radius: 50px;
 	}
 
 	&_text {
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 27px;
 		color: $white;
 
 		span {
@@ -14,11 +19,44 @@
 		}
 	}
 
-	&__info {
+	&_info {
 		width: 60%;
 	}
 
 	.top__send {
+		display: flex;
+		align-items: center;
 		width: 40%;
+
+		fieldset {
+			display: flex;
+			flex-direction: column;
+		}
+
+		input {
+			padding: 18px 28px;
+			border-radius: 50px;
+			margin-bottom: 11px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		input, input::placeholder {
+			font-family: $ff-mon;
+			font-weight: $fw-medium;
+			font-size: 19px;
+			color: $input;
+			opacity: 1;
+		}
+	}
+
+	&_more {
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 19px;
+		color: $white;
+		margin-top: 20px;
 	}
 }
