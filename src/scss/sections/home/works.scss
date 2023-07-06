@@ -1,0 +1,42 @@
+.works {
+	padding: 100px 0 230px;
+
+	.container {
+		max-width: 1140px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-bold;
+		color: $white;
+		line-height: 1.65;
+		margin-bottom: 10px;
+
+		span {
+			color: $accent;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__info {
+		width: 50%;
+		margin-left: 55px;
+	}
+
+	&__text {
+		font-family: $ff-mon;
+		font-weight: $fw-bold;
+		color: $white;
+		font-size: 15px;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+
+	&__img {
+		max-width: 464px;
+		padding-top: 13px;
+	}
+}
