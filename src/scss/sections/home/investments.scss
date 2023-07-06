@@ -1,0 +1,106 @@
+.investments {
+	padding: 90px 0;
+
+	.container {
+		max-width: 1100px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-extra;
+		font-size: 51px;
+		line-height: 80px;
+		color: $white;
+
+		span {
+			color: $accent;
+		}
+	}
+
+	&__subtitle {
+		font-family: $ff-mon;
+		font-weight: $fw-medium;
+		font-size: 19px;
+		line-height: 23px;
+		color: $white;
+		margin-bottom: 33px;
+
+		&:last-child {
+			margin-bottom: 46px;
+		}
+
+		span {
+			color: $accent;
+		}
+	}
+
+	&__table {
+		max-width: 784px;
+		position: relative;
+	}
+
+	&__table_inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 12px;
+		background-color: #D38D39;
+		border-radius: 28px;
+		position: relative;
+		z-index: 2;
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			border-bottom-left-radius: 28px;
+			border-bottom-right-radius: 28px;
+			width: 100%;
+			height: 50px;
+			display: block;
+			background-color: $accent;
+			z-index: 0;
+		}
+	}
+
+	.invest__img {
+		position: absolute;
+		right: -35%;
+		top: -75%;
+		z-index: -2;
+	}
+
+	&__item {
+		font-family: $ff-mon;
+		font-weight: $fw-bold;
+		color: $white;
+		font-size: 15px;
+		line-height: 23px;
+		padding: 6px;
+		border-bottom: 1px solid $white;
+		text-align: center;
+		position: relative;
+		z-index: -1;
+
+		&:nth-child(6) {
+			border-bottom: 0;
+		}
+
+		&:last-child {
+			width: 100%;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			font-size: 29px;
+			border: 0;
+			z-index: 1;
+		}
+	}
+
+	&__right, &__left {
+		width: 50%;
+	}
+
+	&__left {
+		border-right: 1px solid $white;
+	}
+}
