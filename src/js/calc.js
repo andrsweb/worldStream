@@ -28,8 +28,7 @@ const rangeSlider = () => {
 	})
 
 	const calc = () => {
-		const placeNum = 700000
-		sum.textContent = Number((placesInput.value * placeNum) * (monthsInput.value))
+		sum.textContent =  Number(700000) * (Number(placesInput.value) * Number(monthsInput.value)) 
 	}
 }
 

@@ -70,11 +70,23 @@
 		&:nth-child(2) {
 			.forming__title {
 				display: flex;
+				flex-direction: column;
 				align-items: center;
+				text-align: center;
+
+				@media all and (min-width: $xl) {
+					flex-direction: row;
+					text-align: left;
+				}
 
 				span {
 					padding-top: 10px;
 					font-size: 69px;
+					margin-bottom: 10px;
+
+					@media all and (min-width: $xl) {
+						margin-bottom: 0;
+					}
 				}
 			}
 		}
