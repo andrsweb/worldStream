@@ -44,5 +44,8 @@
   },
   "browserslist": [
     "last 3 versions"
-  ]
+  ],
+  "dependencies": {
+    "inputmask": "^5.0.8"
+  }
 }
