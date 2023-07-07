@@ -1,35 +1,35 @@
-document.addEventListener( 'DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 	'use strict'
 
 	rangeSlider()
-} )
+})
 
 const rangeSlider = () => {
-	const placesInput = document.querySelector( '.places' )
-	const monthsInput = document.querySelector( '.months' )
-	const monthsValue = document.querySelector( '.monthes' )
-	const placesValue = document.querySelector( '.places-value' )
-	const sum         = document.querySelector( '.summary')
-	let num = 700000
+	const placesInput = document.querySelector('.places')
+	const monthsInput = document.querySelector('.months')
+	const monthsValue = document.querySelector('.monthes')
+	const placesValue = document.querySelector('.places-value')
+	const sum = document.querySelector('.summary')
+	let num = 1400000
+
 	sum.textContent = num
 
-	if( ! placesInput && ! monthsInput && ! monthsValue && ! placesValue && ! sum ) return
+	if (!placesInput && !monthsInput && !monthsValue && !placesValue && !sum) return
 
 
 	placesInput.addEventListener('input', e => {
-		placesInput.value = e.target.value
-		placesValue.textContent = placesInput.value
+		placesValue.textContent = e.target.value
 		calc()
 	})
 
 	monthsInput.addEventListener('input', e => {
-		monthsInput.value = e.target.value
-		monthsValue.textContent = monthsInput.value
+		monthsValue.textContent = e.target.value
 		calc()
-	} )
+	})
 
 	const calc = () => {
-		sum.textContent = Number(placesInput.value) + Number(monthsInput.value)
+		const placeNum = 700000
+		sum.textContent = Number((placesInput.value * placeNum) * (monthsInput.value))
 	}
 }
 

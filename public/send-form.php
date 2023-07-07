@@ -173,7 +173,7 @@ function as_send_email( string $subject, string $message ){
 		"Reply-To: no-reply@" . $_SERVER['HTTP_HOST'] . "\r\n" .
 		"X-Mailer: PHP/" . phpversion();
 
-	$result = mail('baku_2004_aliev@mail.ru', $subject, $message, $headers );
+	$result = mail('Your email', $subject, $message, $headers );
 
 	if( $result )
 		echo json_encode( [
