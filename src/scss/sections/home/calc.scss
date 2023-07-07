@@ -1,23 +1,36 @@
 .calc {
-	padding: 50px 0;
+	padding: 20px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 50px 0;
+	}
 
 	h2 {
 		font-family: $ff;
 		font-weight: $fw-extra;
-		font-size: 43px;
-		line-height: 68px;
+		font-size: 20px;
+		line-height: 30px;
 		color: $white;
 		text-align: center;
 		margin-bottom: 28px;
+
+		@media all and (min-width: $lg) {
+			font-size: 43px;
+			line-height: 68px;
+		}
 	}
 
 	&__wrapper {
 		width: 100%;
 		max-width: 535px;
 		margin: 0 auto;
-		padding: 58px;
+		padding: 20px;
 		border: 1px dashed #9747FF;
 		border-radius: 50px;
+
+		@media all and (min-width: $lg) {
+			padding: 58px;
+		}
 	}
 
 	&__title,
@@ -27,17 +40,31 @@
 		font-family: $ff-mon;
 		font-weight: $fw-regular;
 		color: #BBBBBB;
-		font-size: 29px;
+		font-size: 15px;
 		line-height: 43px;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 29px;
+			margin-bottom: 40px;
+		}
 	}
 
 	.sum {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 0;
-		font-size: 28px;
-		margin-top: 44px;
+		font-size: 20px;
+		margin-top: 20px;
+
+		@media all and (min-width: $lg) {
+			font-size: 28px;
+			margin-top: 44px;
+		}
 
 		span {
 			margin-right: 5px;

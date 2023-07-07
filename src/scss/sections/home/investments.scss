@@ -1,5 +1,9 @@
 .investments {
-	padding: 90px 0;
+	padding: 30px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 90px 0;
+	}
 
 	.container {
 		max-width: 1100px;
@@ -8,9 +12,14 @@
 	h2 {
 		font-family: $ff;
 		font-weight: $fw-extra;
-		font-size: 51px;
-		line-height: 80px;
+		font-size: 20px;
+		line-height: 30px;
 		color: $white;
+
+		@media all and (min-width: $lg) {
+			font-size: 51px;
+			line-height: 80px;
+		}
 
 		span {
 			color: $accent;
@@ -42,11 +51,15 @@
 	&__table_inner {
 		display: flex;
 		justify-content: space-between;
-		padding: 12px;
+		padding: 5px;
 		background-color: #D38D39;
 		border-radius: 28px;
 		position: relative;
 		z-index: 2;
+
+		@media all and (min-width: $lg) {
+			padding: 12px;
+		}
 
 		&::after {
 			content: "";
@@ -56,10 +69,14 @@
 			border-bottom-left-radius: 28px;
 			border-bottom-right-radius: 28px;
 			width: 100%;
-			height: 50px;
+			height: 23px;
 			display: block;
 			background-color: $accent;
 			z-index: 0;
+
+			@media all and (min-width: 790px) {
+				height: 50px;
+			}
 		}
 	}
 
@@ -74,13 +91,22 @@
 		font-family: $ff-mon;
 		font-weight: $fw-bold;
 		color: $white;
-		font-size: 15px;
-		line-height: 23px;
+		font-size: 8px;
+		line-height: 10px;
 		padding: 6px;
 		border-bottom: 1px solid $white;
 		text-align: center;
 		position: relative;
 		z-index: -1;
+
+		@media all and (min-width: 660px) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: 790px) {
+			font-size: 15px;
+			line-height: 23px;
+		}
 
 		&:nth-child(6) {
 			border-bottom: 0;
@@ -90,14 +116,22 @@
 			width: 100%;
 			margin-bottom: 0;
 			text-transform: uppercase;
-			font-size: 29px;
+			font-size: 12px;
 			border: 0;
 			z-index: 1;
+
+			@media all and (min-width: 790px) {
+				font-size: 29px;
+			}
 		}
 	}
 
 	&__right, &__left {
-		width: 50%;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
 	}
 
 	&__left {

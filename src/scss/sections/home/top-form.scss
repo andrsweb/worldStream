@@ -1,18 +1,31 @@
 .top__form {
-	padding: 245px 0 50px;
+	padding: 50px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 245px 0 50px;
+	}
 
 	&_wrapper {
 		display: flex;
+		flex-direction: column;
 		background-color: $black;
 		padding: 40px;
 		border-radius: 50px;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&_text {
 		font-family: $ff;
 		font-weight: $fw-bold;
-		font-size: 27px;
+		font-size: 17px;
 		color: $white;
+
+		@media all and (min-width: $lg) {
+			font-size: 27px;
+		}
 
 		span {
 			color: $accent;
@@ -20,14 +33,26 @@
 	}
 
 	&_info {
-		width: 60%;
+		width: 100%;
+		margin-bottom: 30px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			width: 60%;
+			margin-bottom: 0;
+			text-align: left;
+		}
 	}
 
 	.top__send {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 40%;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 40%;
+		}
 
 		fieldset {
 			display: flex;

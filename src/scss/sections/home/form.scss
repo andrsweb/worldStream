@@ -1,5 +1,9 @@
 .form {
-	padding: 50px 0 53px;
+	padding: 30px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 50px 0 53px;
+	}
 
 	.container {
 		max-width: 1200px;
@@ -9,33 +13,61 @@
 		font-family: $ff;
 		font-weight: $fw-extra;
 		color: $white;
-		font-size: 55px;
-		line-height: 67px;
-		max-width: 644px;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		
+		@media all and (min-width: $lg) {
+			font-size: 55px;
+			line-height: 67px;
+			max-width: 644px;
+			text-align: left;
+		}
 	}
 
 	&__wrapper {
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 
 		&_info {
 			display: flex;
 			flex-direction: column;
-			margin-right: 45px;
+
+			@media all and (min-width: $lg) {
+				margin-right: 45px;
+			}
 		}
 
 		&_text {
 			font-family: $ff-mon;
 			font-weight: $fw-medium;
 			color: $white;
-			font-size: 22px;
+			font-size: 17px;
 			line-height: 27px;
 			max-width: 614px;
+			text-align: center;
+			margin-bottom: 30px;
+
+			@media all and (min-width: $lg) {
+				text-align: left;
+				font-size: 22px;
+				margin-bottom: 0;
+			}
 		}
 	}
 
 	.form__bottom {
 		width: 100%;
 		max-width: 424px;
+		margin: 0 auto;
+
+		@media all and (min-width: $lg) {
+			margin: 0;
+		}
 
 		fieldset {
 			display: flex;
