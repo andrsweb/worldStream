@@ -1,0 +1,150 @@
+.investments {
+	padding: 30px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 90px 0;
+	}
+
+	.container {
+		max-width: 1100px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-extra;
+		font-size: 20px;
+		line-height: 30px;
+		color: $white;
+
+		@media all and (min-width: $lg) {
+			font-size: 51px;
+			line-height: 80px;
+		}
+
+		span {
+			color: $accent;
+		}
+	}
+
+	&__subtitle {
+		font-family: $ff-mon;
+		font-weight: $fw-medium;
+		font-size: 19px;
+		line-height: 23px;
+		color: $white;
+		margin-bottom: 33px;
+
+		&:last-child {
+			margin-bottom: 46px;
+		}
+
+		span {
+			color: $accent;
+		}
+	}
+
+	&__table {
+		max-width: 784px;
+		position: relative;
+	}
+
+	&__table_inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 5px;
+		background-color: #D38D39;
+		border-radius: 28px;
+		position: relative;
+		z-index: 2;
+
+		@media all and (min-width: $lg) {
+			padding: 12px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			border-bottom-left-radius: 28px;
+			border-bottom-right-radius: 28px;
+			width: 100%;
+			height: 40px;
+			display: block;
+			background-color: $accent;
+			z-index: 0;
+
+			@media all and (min-width: 660px) {
+				height: 23px;
+			}
+
+			@media all and (min-width: 790px) {
+				height: 40px;
+			}
+
+			@media all and (min-width: $lg) {
+				height: 50px;
+			}
+		}
+	}
+
+	.invest__img {
+		position: absolute;
+		right: -35%;
+		top: -75%;
+		z-index: -2;
+	}
+
+	&__item {
+		font-family: $ff-mon;
+		font-weight: $fw-bold;
+		color: $white;
+		font-size: 10px;
+		line-height: 10px;
+		padding: 6px;
+		text-align: center;
+		position: relative;
+		z-index: -1;
+		height: 30px;
+		border-bottom: 1px solid $white;
+
+		@media all and (min-width: 660px) {
+			font-size: 12px;
+			height: auto;
+		}
+
+		@media all and (min-width: 790px) {
+			font-size: 15px;
+			line-height: 23px;
+		}
+
+		&:nth-child(6) {
+			border-bottom: 0;
+		}
+
+		&:last-child {
+			width: 100%;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			font-size: 10px;
+			border: 0;
+			z-index: 1;
+
+			@media all and (min-width: 790px) {
+				font-size: 29px;
+			}
+		}
+	}
+
+	&__right, &__left {
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
+	}
+
+	&__left {
+		border-right: 1px solid $white;
+	}
+}

@@ -1,0 +1,112 @@
+.hero {
+
+	&__wrapper {
+		position: relative;
+		margin-bottom: 45px;
+	}
+
+	&__text {
+		font-family: $ff;
+		color: $white;
+		font-weight: $fw-extra;
+		font-size: 20px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+			max-width: 609px;
+			text-align: left;
+		}
+
+		span {
+			color: $accent;
+		}
+	}
+
+	&__info_text {
+		font-family: $ff;
+		font-weight: $fw-semibold;
+		font-size: 17px;
+		color: $white;
+		margin-bottom: 11px;
+	}
+
+	&__img {
+		position: absolute;
+		right: -10%;
+		top: -50%;
+		display: none;
+		z-index: -1;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
+	}
+
+	&__info_up {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 52px;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&__info_item {
+		position: relative;
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 21px;
+		color: $white;
+		margin-right: 18px;
+		padding-left: 22px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY( -50% );
+			display: block;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: $white;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.hero__info_down {
+		display: flex;
+		flex-direction: column;
+		max-width: 609px;
+
+		@media all and (min-width: 576px) {
+			flex-direction: row;
+		}
+
+		&_item {
+			font-family: $ff;
+			font-weight: $fw-bold;
+			color: $white;
+			font-size: 18px;
+
+			@media all and (min-width: 576px) {
+				margin-right: 67px;
+				max-width: 159px;
+			}
+
+			@media all and (min-width: $md) {
+				margin-right: 67px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

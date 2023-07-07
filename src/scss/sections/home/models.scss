@@ -1,0 +1,95 @@
+.models {
+	padding: 20px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 40px 0;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-extra;
+		color: $white;
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 10px;
+
+		@media all and (min-width: $lg) {
+			font-size: 72px;
+			line-height: 85px;
+			margin-bottom: 109px;
+		}
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -19px;
+	}
+
+	&__item {
+		width: calc(100%/1);
+		padding: 0 19px;
+
+		@media all and (min-width: $lg) {
+			width: calc(100%/3);
+		}
+
+		&_text {
+			font-family: $ff;
+			font-weight: $fw-semibold;
+			font-size: 12px;
+			line-height: 26px;
+			color: $white;
+			height: 100px;
+			text-align: center;
+
+			@media all and (min-width: $md) {
+				font-size: 16px;
+			}
+
+			@media all and (min-width: $lg) {
+				text-align: left;
+				margin-bottom: 44px;
+			}
+		}
+
+		&_inner {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	a {
+		width: 250px;
+		height: 192px;
+		margin-bottom: 20px;
+		transition: scale ease $tr;
+
+		@media all and (min-width: $sm) {
+			width: 372px;
+			height: 192px;
+		}
+
+		@media all and (min-width: $md) {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			opacity: 1;
+			scale: 1.1;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

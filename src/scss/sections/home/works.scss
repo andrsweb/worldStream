@@ -1,0 +1,67 @@
+.works {
+	padding: 30px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 113px 0 162px;
+	}
+
+	.container {
+		max-width: 1140px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-bold;
+		color: $white;
+		font-size: 20px;
+		line-height: 1.65;
+		margin-bottom: 10px;
+
+		@media all and (min-width: $lg) {
+			font-size: 36px;
+		}
+
+		span {
+			color: $accent;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
+	}
+
+	&__info {
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+			margin-left: 55px;
+		}
+	}
+
+	&__text {
+		font-family: $ff-mon;
+		font-weight: $fw-bold;
+		color: $white;
+		font-size: 15px;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+
+	&__img {
+		display: flex;
+		justify-content: center;
+	
+		padding-top: 13px;
+
+		@media all and (min-width: $lg) {
+			max-width: 464px;
+			justify-content: flex-start;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.online {
+	.container {
+		max-width: 1200px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-extra;
+		font-size: 20px;
+		line-height: 30px;
+		color: $white;
+		max-width: 736px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 200px;
+			font-size: 41px;
+			line-height: 64px;
+		}
+
+		strong {
+			background-color: $accent;
+		}
+	}
+
+	&__text {
+		font-family: $ff-mon;
+		font-weight: $fw-medium;
+		font-size: 22px;
+		line-height: 27px;
+		color: $white;
+		max-width: 453px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+
+		&_left {
+			@media all and (min-width: $lg) {
+				padding-top: 12.5%;
+			}
+		}
+
+		&_right {
+			display: flex;
+			justify-content: center;
+			margin-top: 30px;
+
+			@media all and (min-width: $lg) {
+				justify-content: flex-start;
+				margin-top: 0;
+			}
+		}
+	}
+}

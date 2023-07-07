@@ -1,0 +1,179 @@
+.open {
+	padding: 30px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 68px 0;
+	}
+
+	.container {
+		max-width: 1210px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-weight: $fw-extra;
+		font-size: 20px;
+		line-height: 30px;
+		color: $white;
+		max-width: 551px;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $lg) {
+			font-size: 45px;
+			line-height: 70px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&__left, &__right {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
+	}
+
+	&__left {
+		@media all and (min-width: $md) {
+			padding-top: 70px;
+		}
+	}
+
+	&__right {
+		display: flex;
+		justify-content: flex-end;
+
+		@media all and (min-width: $lg) {
+			padding-right: 6.5%;
+		}
+	}
+
+	&__item {
+		background-color: #FFA030;
+		margin-bottom: 20px;
+		width: 100%;
+		max-width: 398px;
+		border-radius: 23px;
+		padding: 7px 21px;
+		display: flex;
+		position: relative;
+
+		@media all and (min-width: $md) {
+			&::before {
+				content: "01";
+				font-family: $ff;
+				font-weight: $fw-bold;
+				position: absolute;
+				left: -32%;
+				top: 0;
+				display: block;
+				font-size: 113px;
+				background-color: #2AA5A0;
+				background-image: linear-gradient(90deg, #ffffff, #c479f7);
+				z-index: -1;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+	
+			&:nth-child(2) {
+				&::before {
+					content: '02';
+				}
+			}
+	
+			&:nth-child(3) {
+				&::before {
+					content: '03';
+				}
+			}
+	
+			&:last-child {
+				margin-bottom: 0;
+	
+				&::before {
+					content: '04';
+				}
+			}
+		}
+
+		&_left {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: calc(40% - 27px);
+			margin-right: 27px;
+		}
+
+		&__right {
+			width: 70%;
+		}
+
+		&_desc {
+			font-family: $ff;
+			font-weight: $fw-bold;
+			font-size: 15px;
+			line-height: 30px;
+			color: $bg;
+
+			@media all and (min-width: $lg) {
+				font-size: 24px;
+			}
+		}
+
+		&_min {
+			display: flex;
+			align-items: center;
+			border: 1px solid $black;
+			border-radius: 304px;
+			margin-bottom: 10px;
+			font-family: $ff-mon;
+			font-weight: $fw-medium;
+			font-size: 12px;
+			padding: 0 5px;
+
+			@media all and (min-width: $md) {
+				font-size: 14px;
+			}
+
+			img {
+				padding-top: 5px;
+				margin: 0 7px;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&_text {
+			font-family: $ff;
+			font-weight: $fw-regular;
+			font-size: 20px;
+			line-height: 31px;
+
+			span {
+				color: $bg;
+			}
+		}
+	}
+
+	&__num {
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 68px;
+		color: $bg;
+		line-height: 1;
+	}
+}
